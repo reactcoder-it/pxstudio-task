@@ -1,30 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Приложение для публикации информации о паб-квизах и ведения рейтинга команд
 
-## Getting Started
+В репозитории простой GraphQL-микросервис, позволяющий создавать, обновлять и удалять записи о текущих или будущих играх (паб-квизах), а также вести сравнительную таблицу и рейтинг команд, учавствующих в паб-квизах.
 
-First, run the development server:
+Микросервис написан с использованием следующих технологий: Express, ApolloServer и MongoDB.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Для обычных **юзеров** есть только одна функция - это регистрация на мероприятие. Для **админов**, возможность создавать, обновлять и удалять записи и вести таблицу с рейтингом игроков.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Задача
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Написать удобный интерфейс для приложения. На главной странице приложения должны быть карточки с датами, изображением и короткой информацией, при клике они должны раскрываться с более детальной информацией. Внутри кнопка регистрации, при нажатии на которую появляется форма регистрации. Можно сортировать карточки по городу, дате и типу игры.
 
-## Learn More
+Вторая страница - это таблица с текущим рейтингом команд. На этой странице,
+команды должны следовать друг за другом по убыванию рейтинга.
 
-To learn more about Next.js, take a look at the following resources:
+## Требования
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Приложение должно быть написано исключительно на Next.js;
+2. На главной странице должно показываться только 8 карточек, если их больше, должен использоваться пагинатор;
+3. Не должно быть лишнего кода;
+4. Все должно быть в едином codestyle;
+5. Интерфейс должен быть написан на Material UI;
+6. Приложение должно корректно отображаться в любых браузерах и при любых разрешениях экрана;
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Дополнительно
 
-## Deploy on Vercel
+Ограничений по технологиям кроме UI библиотеки и фреймворка Next.js нет – выбирайте любые инструменты для выполнения задания. Главное, чтобы вашим приложением можно было пользоваться в рамках описанных сценариев. Насчёт дизайна можете много не думать – ссылок, кнопок и заголовков будет достаточно.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Тем не менее сделайте это так, чтобы этим можно было пользоваться. Ведь в итоге вы будете проектировать интерфейсы для людей.
